@@ -1,0 +1,288 @@
+---
+import Search from "@components/Search.jsx";
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col mb-0">
+          <p class="text1">THE</p>
+        </div>
+      </div>
+
+      <!-- Search component for desktop -->
+      <div class="row">
+        <div class="col mb-2 mt-0 text-white">
+          <div class="d-none d-md-block">
+            <Search client:load/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories for desktop -->
+      <div class="row d-none d-md-flex">
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/general" style="text-decoration: none;">
+              <i class="fas fa-globe"></i>
+              <span>General</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/business" style="text-decoration: none;">
+              <i class="fas fa-briefcase"></i>
+              <span>Business</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/health" style="text-decoration: none;">
+              <i class="fas fa-heartbeat"></i>
+              <span>Health</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/science" style="text-decoration: none;">
+              <i class="fas fa-flask"></i>
+              <span>Science</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/sports" style="text-decoration: none;">
+              <i class="fa-solid fa-basketball"></i>
+              <span>Sports</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/technology" style="text-decoration: none;">
+              <i class="fas fa-laptop"></i>
+              <span>Technology</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/entertainment" style="text-decoration: none;">
+              <i class="fa-solid fa-masks-theater"></i>
+              <span>Entertainment</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-6 col-sm-12">
+      <div class="row">
+        <div class="col-12">
+          <a href="/" style="text-decoration: none;">
+            <p class="text2">NEWS TRACKER</p>
+            <p class="text3">Breaking News Highlights</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Search component for mobile -->
+      <div class="row">
+        <div class="col mb-2 mt-0 text-white d-md-none">
+          <Search client:load/>
+        </div>
+      </div>
+
+      <!-- Categories for mobile -->
+      <div class="row d-md-none">
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/general" style="text-decoration: none;">
+              <i class="fas fa-globe"></i>
+              <span>General</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/business" style="text-decoration: none;">
+              <i class="fas fa-briefcase"></i>
+              <span>Business</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/health" style="text-decoration: none;">
+              <i class="fas fa-heartbeat"></i>
+              <span>Health</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/science" style="text-decoration: none;">
+              <i class="fas fa-flask"></i>
+              <span>Science</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/sports" style="text-decoration: none;">
+              <i class="fa-solid fa-basketball"></i>
+              <span>Sports</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/technology" style="text-decoration: none;">
+              <i class="fas fa-laptop"></i>
+              <span>Technology</span>
+            </a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="category-item">
+            <a href="/entertainment" style="text-decoration: none;">
+              <i class="fa-solid fa-masks-theater"></i>
+              <span>Entertainment</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .text1,
+  .text2 {
+    font-family: "Komoda", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .text1 {
+    text-align: right;
+    font-size: 100px;
+    color: #594a42;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 15px;
+    margin-top: 12px;
+  }
+
+  .text2 {
+    text-align: left;
+    font-size: 300px;
+    color: #594a42;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    line-height: 0.6;
+    box-sizing: border-box;
+    margin-top: 70px;
+  }
+
+  .text3 {
+    text-align: center;
+    font-size: 60px;
+    color: #594a42;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 19px;
+    margin-bottom: 14px;
+    font-family: "Komoda", sans-serif;
+    margin-top: 28px;
+    margin-left: 12px;
+  }
+
+  @font-face {
+    font-family: "Komoda";
+    src: url("fonts/Komoda.otf") format("opentype");
+  }
+
+  input[type="text"] {
+    background-color: #594a42;
+    border: 1px solid #594a42;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(73, 31, 3, 0.4);
+    box-shadow: inset 0px 4px 8px rgba(73, 31, 3, 0.4);
+  }
+
+  input[type="text"]::placeholder {
+    color: white;
+  }
+
+  .category-item {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .category-item i {
+    display: block;
+    background-color: #594a42;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 auto 5px;
+    box-shadow: 0px 4px 8px rgba(73, 31, 3, 0.4);
+  }
+
+  .category-item span {
+    display: block;
+    font-size: 14px;
+    color: #594a42;
+  }
+
+  .category-item i:hover {
+    transform: scale(1.3);
+  }
+
+  @media screen and (max-width: 991px) {
+    .text1 {
+      font-size: 60px;
+      letter-spacing: 5px;
+      display: none;
+    }
+
+    .text2 {
+      font-size: 100px;
+      line-height: 0.6;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .text3 {
+      font-size: 20px;
+      letter-spacing: 6px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .row:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 6px;
+      margin-top: 0px;
+    }
+  }
+</style>
